@@ -7,7 +7,6 @@ import AppUI from './components/AppUI'
 import CameraController from './components/CameraController'
 import SceneModels from './components/SceneModels'
 import BackgroundSphere from './components/BackgroundSphere'
-import AudioSyncManager from './components/AudioSyncManager' 
 
 export default function App() {
   // 1. ADDED THIS MISSING LINE TO FIX THE CRASH!

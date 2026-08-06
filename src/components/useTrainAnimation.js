@@ -6,7 +6,7 @@ const PI_2 = Math.PI * 2;
 const LUT_RESOLUTION = 720; // Pre-calculate 720 distinct steps around the circle
 
 const trainTrackPoints = [
-  [0,             18],   
+  [0,             19],   
   [Math.PI * 0.5, 18],  
   [Math.PI * 0.6, 18],  
   [Math.PI * 1.0, 18],  
@@ -15,9 +15,9 @@ const trainTrackPoints = [
   [Math.PI * 1.3, 19],
   [Math.PI * 1.4, 19],    
   [Math.PI * 1.5, 18],  
-  [Math.PI * 1.8, 19],  
+  [Math.PI * 1.8, 20],  
   [Math.PI * 1.9, 19],  
-  [Math.PI * 2.0, 18]    
+  [Math.PI * 2.0, 19]    
 ]
 
 // Pure function to generate the Lookup Table (LUT) once
@@ -81,7 +81,7 @@ export default function useTrainAnimation(trainRef, trainScene, trainRadius, tra
   useFrame((state) => {
     const time = state.clock.elapsedTime
     if (trainRef.current) {
-      const angle = (time * trainSpeed*2) + Math.PI
+      const angle = (time * trainSpeed) + Math.PI
       
       const x = trainCenter[0] - trainRadius * Math.sin(angle)
       const z = trainCenter[2] - trainRadius * Math.cos(angle)
