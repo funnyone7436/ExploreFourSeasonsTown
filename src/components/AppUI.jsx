@@ -114,7 +114,7 @@ export default function AppUI({ motionValue, isGameActive, isAutoMode, setIsAuto
         zIndex: 1000
       }}>
         <div>🔐 No worries, just fun!</div>
-        <a href="https://github.com/funnyone7436/Flowers-In-Spring" target="_blank" style={{ color: '#61dafb' }}>🔍 View full source</a>
+        <a href="https://github.com/funnyone7436/ExploreFourSeasonsTown" target="_blank" style={{ color: '#61dafb' }}>🔍 View full source</a>
       </div>
     </>
   )
