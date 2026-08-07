@@ -113,7 +113,7 @@ export default function AppUI({ motionValue, isGameActive, isAutoMode, setIsAuto
         fontSize: '14px',
         zIndex: 1000
       }}>
-        <div>🔐 No worries, just fun!</div>
+        <div>🔐 Have fun!</div>
         <a href="https://github.com/funnyone7436/ExploreFourSeasonsTown" target="_blank" style={{ color: '#61dafb' }}>🔍 View full source</a>
       </div>
     </>
